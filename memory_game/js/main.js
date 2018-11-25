@@ -40,7 +40,7 @@ var createBoard = function() {
 	for (var i = 0; i < cards.length; i++) {
 		var cardElement = document.createElement('img');
 		cardElement.setAttribute('src', "images/back.png");
-		cardElement.setAttribute(i, 'data-id');
+		cardElement.setAttribute('data-id', i);
 		cardElement.addEventListener('click', flipCard);
 		cardElement.appendChild(game-board);
 	}
